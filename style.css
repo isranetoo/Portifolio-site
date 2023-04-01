@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,100&display=swap');
 
 body {
-  background-color: palevioletred;
+  background: linear-gradient(to left, #255c98, #a4edea) no-repeat;
 }
 
 p{
   font-family: "JetBrains Mono",monospace;
 }
 
-.btn {
+.btn-menu {
   display: block;
   border: none;
   margin: 10px 10px;
@@ -27,6 +27,7 @@ p{
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
   height: 45px;
+  width: 75px;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -44,22 +45,22 @@ p{
 }
 
 
-.btn a{
+.btn-menu a{
   color: #36395A;
   display: block;
   text-decoration: none;
 }
 
-.btn:focus {
+.btn-menu:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.btn:hover {
+.btn-menu:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-.btn:active {
+.btn-menu:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
@@ -88,7 +89,7 @@ ul {
 
 li {
   float: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: "JetBrains Mono",monospace;
   font-weight: bold;
 }
 
@@ -167,6 +168,69 @@ li a:hover:not(.active) {
 .progress-bar{
 background-color: #059fa8;
 }
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.link-projetos{
+  text-decoration: none;
+  color: #111;
+}
+
+.btn-projetos{
+  display: block;
+  border: none;
+  margin: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 45px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.btn-projetos:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn-projetos:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-projetos:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
 
 #block_skills{
   width: 100%;
@@ -258,4 +322,60 @@ input[type=submit] {
 .fotter-text{
   color: #04AA6D; 
   text-decoration: none;
+}
+
+.btn-footer {
+  display: block;
+  border: none;
+  margin: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 45px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+
+.btn-footer a{
+  color: #36395A;
+  display: block;
+  text-decoration: none;
+}
+
+.btn-footer:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn-footer:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-footer:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,100&display=swap');
 
 body {
-  background-color: palevioletred;
+  background: linear-gradient(to left, #255c98, #a4edea) no-repeat;
 }
 
 .btn {
@@ -83,7 +83,7 @@ ul {
 
 li {
   float: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: "JetBrains Mono",monospace;
   font-weight: bold;
 }
 
